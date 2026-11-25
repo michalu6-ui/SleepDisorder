@@ -1,0 +1,78 @@
+.card--highlight {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 1px var(--color-accent-soft);
+}
+
+.brain-dump textarea {
+  width: 100%;
+  min-height: 88px;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  resize: vertical;
+  margin-bottom: 12px;
+}
+
+.brain-dump__label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.brain-dump--vaulting {
+  animation: vault-away 0.8s ease forwards;
+}
+
+@keyframes vault-away {
+  to {
+    transform: translateY(24px) scale(0.96);
+    opacity: 0;
+  }
+}
+
+.breath-ring {
+  width: 200px;
+  height: 200px;
+  margin: 24px auto;
+  border-radius: 50%;
+  border: 3px solid var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: breath-pulse 8s ease-in-out infinite;
+}
+
+.breath-ring--inhale {
+  animation-name: breath-inhale;
+}
+
+.breath-ring--exhale {
+  animation-name: breath-exhale;
+}
+
+@keyframes breath-inhale {
+  0%,
+  100% {
+    transform: scale(0.88);
+  }
+  40% {
+    transform: scale(1.08);
+  }
+}
+
+@keyframes breath-exhale {
+  0%,
+  100% {
+    transform: scale(1.08);
+  }
+  60% {
+    transform: scale(0.88);
+  }
+}
+
+.breath-phase {
+  font-size: 1.125rem;
+  font-weight: 600;
+}

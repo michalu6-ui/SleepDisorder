@@ -1,0 +1,62 @@
+.why-profile__list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--color-text-muted);
+  font-size: 0.9375rem;
+}
+
+.why-profile__muted {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
+
+.why-profile__archetypes-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 16px 0 10px;
+}
+
+.why-profile__scroll {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scroll-snap-type: x mandatory;
+}
+
+.why-profile__archetype {
+  flex: 0 0 78%;
+  scroll-snap-align: start;
+  padding: 14px;
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  font-size: 0.875rem;
+}
+
+.why-profile__archetype p {
+  margin: 6px 0 0;
+  color: var(--color-text-muted);
+}
+
+.why-profile__safety {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin: 16px 0;
+}
+
+.why-profile__cta {
+  margin-top: 8px;
+  padding-bottom: var(--safe-bottom);
+}
+
+.why-profile__skip {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}

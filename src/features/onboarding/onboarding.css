@@ -1,0 +1,46 @@
+.onboard__progress {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-bottom: 12px;
+}
+
+.onboard__question {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.onboard__options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.onboard__kicker {
+  color: var(--color-text-muted);
+  margin-bottom: 8px;
+}
+
+.onboard__tagline {
+  margin-bottom: 24px;
+  font-style: italic;
+  color: var(--color-text-muted);
+}
+
+.onboard__boundaries ul {
+  margin: 12px 0 0;
+  padding-left: 1.2rem;
+  color: var(--color-text-muted);
+  font-size: 0.9375rem;
+}
+
+.onboard__boundaries p {
+  font-size: 0.9375rem;
+}
+
+.onboard__starters {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--color-text-muted);
+  font-size: 0.9375rem;
+}

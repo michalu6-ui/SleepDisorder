@@ -1,0 +1,28 @@
+.rescue {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  max-width: var(--app-max-width);
+  margin: 0 auto;
+  padding: 24px 20px;
+  background: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rescue__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+  font-size: 1.5rem;
+  color: var(--color-text-muted);
+}
+
+.rescue__hint {
+  text-align: center;
+  color: var(--color-text-muted);
+  margin-bottom: 32px;
+}

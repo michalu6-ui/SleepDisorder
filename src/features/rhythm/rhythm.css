@@ -1,0 +1,50 @@
+.rhythm-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.rhythm-list__item {
+  display: grid;
+  grid-template-columns: 1fr 32px 48px;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 16px;
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  margin-bottom: 8px;
+}
+
+.rhythm-list__date {
+  font-size: 0.9375rem;
+}
+
+.rhythm-list__wake {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+.rhythm-list__mood {
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+.rhythm-list__dots {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-border);
+}
+
+.dot--on {
+  background: var(--color-accent);
+}

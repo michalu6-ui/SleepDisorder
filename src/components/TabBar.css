@@ -1,0 +1,23 @@
+.tab-bar {
+  display: flex;
+  height: var(--tab-height);
+  padding-bottom: var(--safe-bottom);
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+}
+
+.tab-bar__link {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+.tab-bar__link--active {
+  color: var(--color-text);
+}

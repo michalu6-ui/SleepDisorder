@@ -1,0 +1,45 @@
+.phone-shell {
+  min-height: 100dvh;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  --desktop-bg: #2a2520;
+}
+
+.phone-shell__backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: radial-gradient(ellipse at 50% 20%, #3d3530 0%, #1a1614 70%);
+  pointer-events: none;
+}
+
+.phone-shell__device {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: var(--app-max-width);
+  min-height: 100dvh;
+  background: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-shell--framed .phone-shell__device {
+  margin: 16px auto;
+  min-height: calc(100dvh - 32px);
+  border-radius: var(--radius-frame);
+  box-shadow: var(--shadow-frame);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+@media (max-width: 480px) {
+  .phone-shell--framed .phone-shell__device {
+    margin: 0;
+    min-height: 100dvh;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+  }
+}
