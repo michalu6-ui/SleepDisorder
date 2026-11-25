@@ -13,6 +13,10 @@ npm run dev
 
 Otwórz [http://localhost:5173](http://localhost:5173). Na desktopie aplikacja wyświetla się w korycie ~430px (rama telefonu można włączyć w **Ja → Wygląd**).
 
+## Demo (GitHub Pages)
+
+[https://michalu6-ui.github.io/SleepDisorder/](https://michalu6-ui.github.io/SleepDisorder/)
+
 ## Build
 
 ```bash
